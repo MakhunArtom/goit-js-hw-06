@@ -1,6 +1,6 @@
-// // Кількість КАТЕГОРІЙ \\\\\\\\\\\\\
-// const categoriesAmountRef = document.querySelectorAll(".item");
-// console.log(`Number of categories: ${categoriesAmountRef.length}`);
+// Кількість КАТЕГОРІЙ \\\\\\\\\\\\\
+const categoriesAmountRef = document.querySelectorAll(".item");
+console.log(`Number of categories: ${categoriesAmountRef.length}`);
 
 // // Масив ЗАГОЛОВКІВ //////////////
 // const titlRef = document.querySelectorAll("h2");
