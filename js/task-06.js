@@ -7,7 +7,7 @@ function onTargetInput(event) {
   let string = event.currentTarget.value;
 
   if (string.length <= Number(inputLength)) {
-    return (input.style.borderColor = "#4caf50");
+    return input.classList.add("valid");
   }
-  input.style.borderColor = "#f44336";
+  input.classList.add("invalid");
 }
