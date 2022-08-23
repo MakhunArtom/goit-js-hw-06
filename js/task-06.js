@@ -5,8 +5,8 @@ input.addEventListener("blur", onTargetInput);
 
 function onTargetInput(event) {
   let string = event.currentTarget.value;
-
-  if (string.length <= Number(inputLength)) {
+  console.log(string.length);
+  if (string.length === Number(inputLength)) {
     return input.classList.add("valid");
   }
   input.classList.add("invalid");
