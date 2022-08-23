@@ -7,7 +7,10 @@ function onTargetInput(event) {
   let string = event.currentTarget.value;
   console.log(string.length);
   if (string.length === Number(inputLength)) {
-    return input.classList.add("valid");
+    console.log(string.length === Number(inputLength));
+    input.classList.add("valid");
+    return input.classList.replace("invalid", "valid");
   }
+  input.classList.replace("valid", "invalid");
   input.classList.add("invalid");
 }
