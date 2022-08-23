@@ -8,11 +8,10 @@ function onSubmitForm(event) {
 
   if (form.email.value === "" || form.password.value === "") {
     alert("Заполните все поля");
-  } else {
-    formData.forEach((value, name) => {
-      console.log(`${name}: ${value} `);
-    });
+    return;
   }
-
-  form.reset();
+  formData.forEach((value, name) => {
+    console.log(`${name}: ${value} `);
+    form.reset();
+  });
 }
